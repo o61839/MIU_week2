@@ -6,13 +6,21 @@
 
 These are my Git Links: 
 
-http://o61839.github.io/MIU_week1
+	https://github.com/o61839/MIU_week2.git
 
-https://github.com/o61839/MIU_week1.git
+	https://github.com/o61839/MIU_week2.git
 
-https://github.com/o61839/MIU_week2.git
+Future Weeks: 
 
-https://github.com/o61839/MIU_week3.git
+	https://github.com/o61839/MIU_week3.git
 
-https://github.com/o61839/MIU_week4.git
+	https://github.com/o61839/MIU_week4.git
+
+Previous Weeks: 
+	
+	Week One: 
+
+		http://o61839.github.io/MIU_week1
+
+		https://github.com/o61839/MIU_week1.git
 
