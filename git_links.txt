@@ -1,0 +1,18 @@
+<!-- 	Jenney Grover
+		MIU 1307
+		Project 1, 2, 3, 4
+		began June 7, 2013
+-->
+
+These are my Git Links: 
+
+http://o61839.github.io/MIU_week1
+
+https://github.com/o61839/MIU_week1.git
+
+https://github.com/o61839/MIU_week2.git
+
+https://github.com/o61839/MIU_week3.git
+
+https://github.com/o61839/MIU_week4.git
+
