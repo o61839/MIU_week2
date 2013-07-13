@@ -8,7 +8,7 @@ These are my Git Links:
 
 	https://github.com/o61839/MIU_week2.git
 
-	https://github.com/o61839/MIU_week2.git
+	http://o61839.github.io/MIU_week2/
 
 Future Weeks: 
 
@@ -20,7 +20,7 @@ Previous Weeks:
 	
 	Week One: 
 
-		http://o61839.github.io/MIU_week1
+		http://o61839.github.io/MIU_week1/
 
 		https://github.com/o61839/MIU_week1.git
 
