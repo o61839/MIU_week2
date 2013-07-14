@@ -1,7 +1,10 @@
 /* 	Jenney Grover
 	MIU 1307
+	Your Personal Librarian
 	Project 1, 2, 3, 4
 	began June 7, 2013
+	
+	20 sample books
 */
 
 var json = {
