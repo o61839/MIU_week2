@@ -28,20 +28,26 @@ h2 {
 	color: #47006B; 
 }
 
+h3 {
+	margin: 12px 15px; 
+	text-align: left; 
+	color: #47006B; 
+}
+
 big {
 	color: #E87600;
 }
 span {
-	font-variant: small-caps; 
+	/*font-variant: small-caps;*/ 
 	font-size: 18px; 
-	color: #990071;
+	/*color: #990071;*/
 }
 
 p {
 	color: #47006B; 
 	margin: 10px;
 	text-align: left;
-	font-variant: small-caps; 
+	/*font-variant: small-caps;*/ 
 	line-height: 1.3em; 
 	text-indent: 10px; 
 }
@@ -97,7 +103,9 @@ ul li {
 #submitButton {
  	background-color: #400099;
  	font-size: 0.9pc;
- 	color: #FEFFBF; 
+ 	font-weight: bold; 
+ 	color: #47006B;
+ 		/*FEFFBF*/
  	width: 120px;
  	height: 40px;
  	margin-top: 5px;
@@ -114,7 +122,9 @@ ul li {
 #showSatchel {
  	background-color: #36991D;
  	font-size: 0.9pc;
- 	color: #FEFFBF; 
+ 	font-weight: bold; 
+ 	color: #47006B;
+ 	/*color: #FEFFBF; */
  	width: 120px;
  	height: 40px;
  	margin-top: 5px;
@@ -131,7 +141,9 @@ ul li {
 #emptySatchel {
  	background-color: #D12136;
  	font-size: 0.9pc;
- 	color: #FEFFBF; 
+ 	font-weight: bold; 
+ 	color: #47006B;
+ 	/*color: #FEFFBF; */ 
  	width: 120px;
  	height: 40px;
  	margin-top: 5px;
@@ -147,7 +159,9 @@ ul li {
 #goHome {
  	background-color: #36991D;
  	font-size: 0.9pc;
- 	color: #FEFFBF; 
+ 	font-weight: bold; 
+ 	color: #47006B;
+ 	/*color: #FEFFBF; */ 
  	width: 120px;
  	height: 40px;
  	margin-top: 5px;

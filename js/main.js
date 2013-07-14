@@ -80,6 +80,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			document.getElementById("myBookQuestions").reset();
    	};
    	
+   	//this toggles some functions on and off depending on the need. Makes some buttons visible and some hide.
    	function toggleControls(n){
 		switch(n){
 			case "on":
@@ -396,6 +397,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 			//document.getElementById("bookInfoDisplay").focus();
 			//window.location.reload(true); 
+			showInfo();
 	};
 	
 	//clearInfo function goes with the clearData button (Empty Satchel)
