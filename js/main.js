@@ -139,7 +139,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		};
 		//Save data into Local Storage: use Stringify to convert our object to a string by using JSON.stringify
 		localStorage.setItem(keyValue, JSON.stringify(myData)); 
-		alert("Your book is in your Satchel");
+		alert("Your book is in your Library");
 		//sets focus to the top of the form.
 		//window.location(additem.html#reloadHere); //this deletes the genre selector
 		//genreCategory (); //this was suggested to reload the genre selector
@@ -154,9 +154,10 @@ window.addEventListener("DOMContentLoaded", function(){
 	function showInfo(){
 		toggleControls("on");
 		if(localStorage.length === 0){
-			alert("Your Satchel is empty, so default data was added.");
+			alert("Your Library is empty, so default data was added.");
 			toggleControls("off"); //saves user a step to getting back to the form. 
 			autoFillData();
+			showInfo();
 		} else {
 			var makeDiv 	= ge("bookInfoDisplay"); 
 			makeDiv.innerHTML = ""; //resets the wonky storage issue
@@ -190,7 +191,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 		}
 		document.getElementById("bookInfoDisplay").focus();
-		//window.location.reload(true); ------ this resets the form and doesn't display the satchel. 
+		//window.location.reload(true); ------ this resets the form and doesn't display the Library. 
 	};
 	
 	//Get the image for the right category and display it
@@ -389,12 +390,12 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	//deleting one item from localStorage
 	function deleteItem(){
-		var questionThem = confirm("Pressing OK will remove the book from the Satchel. Are you sure?");
+		var questionThem = confirm("Pressing OK will remove the book from the Library. Are you sure?");
 			if(questionThem){
 			localStorage.removeItem(this.key)
-			alert("This book was successfully deleted from the Satchel.")
+			alert("This book was successfully deleted from the Library.")
 			} else {
-			alert("Your book is safe in the Satchel"); 
+			alert("Your book is safe in the Library"); 
 			}
 			//document.getElementById("bookInfoDisplay").focus();
 			//window.location.reload(true); 
@@ -404,24 +405,24 @@ window.addEventListener("DOMContentLoaded", function(){
 	//clearInfo function goes with the clearData button (Empty Satchel)
 	var clearInfo = function (){
 		if(localStorage.length === 0){
-			alert("There are no books in your Satchel to remove.");
+			alert("There are no books in your Library to remove.");
 			window.location.reload();  
 		} else {
-			var questionThem = confirm("Pressing OK will empty your Satchel. Are you sure?");
+			var questionThem = confirm("Pressing OK will empty your Library. Are you sure?");
 			if(questionThem){
 				localStorage.clear()
-				alert("Your Satchel is now empty!");
+				alert("Your Library is now empty!");
 				window.location.reload();
 			} else {
-				alert("Your books are safe in the Satchel");
+				alert("Your books are safe in the Library");
 				window.location.reload(); 
 			}
 			//document.getElementById("bookInfoDisplay").focus(); 
-			//window.location.reload(true); 
 		}
+		window.location.reload(true); 
 	};
 
-	//returnHome function returns the two buttons and shows the Form and hides the Satchel
+	//returnHome function returns the two buttons and shows the Form and hides the Library
 	var returnHome = function (){
 		toggleControls("off");
 		document.getElementById("bookInfoDisplay").focus();	
