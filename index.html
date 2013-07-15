@@ -36,28 +36,37 @@
 
 	</head>
 	<body>
-		<header>
-			<h3> Trouble organizing your books? 
-			</h3>
-		</header>
-		<div>
+	
+		<div data-role="page" id="home">
+			
+			<div data-role="header" data-position="fixed">
+				<small>Organize your books with us! 
+				</small>
+			</div>
+			
+			<div>
     			<a href="additem.html"><img src="images/cta.png" alt="cta"/></a>
+			</div>
+
+        	<div data-role="content">
+        		<p id="searchFunction"><input type="text" id="bookSearch" placeholder="Search for a Book!"/></p>
+        		<p><a href="error401.html" data-role="button" data-icon="search" data-iconpos="right" data-theme="d">Search</a></p>
+        	</div>	
+        	
+        	<div data-role="content">	
+        		<p><a href="error401.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Hardcover</a></p>
+        		<p><a href="error401.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Paperback</a></p>
+        		<p><a href="error401.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Mobile</a></p>
+        		<p><a href="error401.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Audio</a></p>
+        		<p><a href="error401.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Series</a></p>
+        	</div>
+			
+			<div data-role="footer">
+   			 	<small>&copy 2013 Duffer Design. All Rights Reserved.</small>
+			</div>
 		</div>
-		<div class="searchFeature">
-        		<p id="searchFunction"><input type="text" id="bookSearch" placeholder="Search for a Book!"/><input type="button" id="searchSubmit" value="Search" /></p>
-        </div>
-        <div class="browseFeature">
-        		<a href="error401.html"><img src="images/hardcover.png" alt="browse"/></a>
-        		<a href="error401.html"><img src="images/paperback.png" alt="browse"/></a>
-        		<a href="error401.html"><img src="images/mobile.png" alt="browse"/></a>
-        		<a href="error401.html"><img src="images/audio.png" alt="browse"/></a>
-        		<a href="error401.html"><img src="images/series.png" alt="browse"/></a>
-        </div>
-		<footer>
-   			 <small>June 6, 2013, Jenney Grover</small><br />
-   			 <small>&copy 2013 Duffer Design. All Rights Reserved.</small>
-		</footer>
-		
+	
+	
 		<!-- The link for the jQuery Mobile web hosted code -->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
