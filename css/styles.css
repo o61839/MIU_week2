@@ -94,10 +94,21 @@ select {
 	margin: -40px; 
 }
 
-ul li {
-	list-style: none; 
+ul {
+	display: block;
+	border: 0px solid #90bade; 
 }
 
+ul li {
+	list-style-type:none;
+ 	border: 0px solid black; 
+}
+
+ul li div 
+ {
+   border:1px solid black
+ }
+ 
 #book {
 	display: block; 
 }
