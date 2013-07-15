@@ -38,6 +38,11 @@ h3 {
 big {
 	color: #E87600;
 }
+
+small {
+	text-align: right;
+}
+
 span {
 	/*font-variant: small-caps;*/ 
 	font-size: 18px; 
