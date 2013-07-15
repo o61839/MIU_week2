@@ -36,10 +36,10 @@
 
 	</head>
 	<body>
-	
-		<div data-role="page" id="home">
+	<!-- home page -->
+		<div data-role="page" id="home" data-id="navigation" >
 			
-			<div data-role="header" data-position="fixed">
+			<div data-role="header" data-position="fixed" data-theme="e">
 				<small>Organize your books with us! 
 				</small>
 			</div>
@@ -60,12 +60,36 @@
         		<p><a href="error401.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Audio</a></p>
         		<p><a href="error401.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Series</a></p>
         	</div>
-			
-			<div data-role="footer">
-   			 	<small>&copy 2013 Duffer Design. All Rights Reserved.</small>
-			</div>
+        		
+        	<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#about" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">About Page</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">Gold App</a></li>
+        				<li><a href="#about" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">Bronze App</a></li>
+        			</ul>
+        		</div>
+        	</div>
+				
 		</div>
-	
+	<!-- about page -->
+		<div data-role="page" id="about" data-add-back-btn="true" data-id="navigation">
+			<div data-role="header" data-position="fixed">
+				<small>Organize your books with us! 
+				</small>
+			</div>
+   			 <small>&copy 2013 Duffer Design. All Rights Reserved.</small>
+   			 
+   			 <div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#about" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" class="ui-btn-active">About Page</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">Gold App</a></li>
+        				<li><a href="#about" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">Bronze App</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
 	
 		<!-- The link for the jQuery Mobile web hosted code -->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
