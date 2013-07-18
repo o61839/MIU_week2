@@ -45,7 +45,7 @@
 			</div>
 			
 			<div>
-    			<a href="additem.html"><img src="images/cta.png" alt="cta" data-ajax="false"/></a>
+    			<a href="additem.html" data-ajax="false"><img src="images/cta.png" alt="cta"/></a>
 			</div>
         	
         	<div data-role="content">
@@ -58,11 +58,13 @@
 				<input type="search" name="search" id="search-basic" value="Search for a book!" />
         		
         		<label for="browse-basic">Browse Categories:</label>
-        		<p><a href="error404.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Hardcover</a></p>
-        		<p><a href="error404.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Paperback</a></p>
-        		<p><a href="error404.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Mobile</a></p>
-        		<p><a href="error404.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Audio</a></p>
-        		<p><a href="error404.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d">Series</a></p>
+        		<ul>
+        			<li><a href="#hardcover" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01hardcover.png"/>   Hardcover</a></li>
+        			<li><a href="#paperback" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01paperback.png"/>   Paperback</a></li>
+        			<li><a href="#mobile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01mobile.png"/>   Mobile</a></li>
+        			<li><a href="#audio" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01audio.png"/>   Audio</a></li>
+        			<li><a href="#series" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01series.png"/>   Series</a></li>
+        		</ul>
         	</div>
         		
         	<div data-role="footer" data-position="fixed">
@@ -71,7 +73,7 @@
         				<li><a href="#" data-role="button" data-icon="home" data-iconpos="right" data-theme="e" class="ui-btn-active">Home</a></li>
         				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">Info</a></li>
         				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">About</a></li>
-        				<li><a href="#news" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">News</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -99,7 +101,7 @@
         				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
         				<li><a href="#" data-role="button" data-icon="info" data-iconpos="right" data-theme="e" class="ui-btn-active">Info</a></li>
         				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">About</a></li>
-        				<li><a href="#news" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">News</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">New</a></li>
         			</ul>
         		</div>
         	</div>
@@ -125,21 +127,21 @@
         				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
         				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">Info</a></li>
         				<li><a href="#" data-role="button" data-icon="star" data-iconpos="right" data-theme="e" class="ui-btn-active">About</a></li>
-        				<li><a href="#news" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">News</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">New</a></li>
         			</ul>
         		</div>
         	</div>
 		</div>
 	
 		<!-- Newstream page -->
-		<div data-role="page" id="news">
+		<div data-role="page" id="new">
 			<div data-role="header" data-position="fixed" data-theme="e">
 				<small>Organize your books with us! 
 				</small>
 			</div>
    			<div data-role="content">
    				<ul>
-   					<li> Add NewStream Info Here </li>
+   					<li> Newly Added books here </li>
    					<li> Duffer Design </li>
    					<li>&copy 2013 Duffer Design. All Rights Reserved.</li>
    				</ul>
@@ -150,12 +152,142 @@
         				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
         				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">Info</a></li>
         				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">About</a></li>
-        				<li><a href="#" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" class="ui-btn-active">News</a></li>
+        				<li><a href="#" data-role="button" data-icon="check" data-iconpos="right" data-theme="e" class="ui-btn-active">New</a></li>
         			</ul>
         		</div>
         	</div>
 		</div>
 	
+		<!-- Hardcover Browse -->
+		<div data-role="page" id="hardcover">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01hardcover.png"/>
+				<small>Hardcover Books 
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li> all hardcover books listed here </li>
+					<li> Duffer Design </li>
+					<li>&copy 2013 Duffer Design. All Rights Reserved.</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+	
+	<!-- Paperback Browse -->
+		<div data-role="page" id="paperback">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01paperback.png"/>
+				<small>Paperback Books 
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li> all paperback books listed here </li>
+					<li> Duffer Design </li>
+					<li>&copy 2013 Duffer Design. All Rights Reserved.</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+	
+	<!-- Mobile Browse -->
+		<div data-role="page" id="mobile">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01mobile.png"/>
+				<small>Mobile Books 
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li> all mobile books listed here </li>
+					<li> Duffer Design </li>
+					<li>&copy 2013 Duffer Design. All Rights Reserved.</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+		
+		<!-- Audio Browse -->
+		<div data-role="page" id="audio">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01audio.png"/>
+				<small>Audio Books 
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li> all audio books listed here </li>
+					<li> Duffer Design </li>
+					<li>&copy 2013 Duffer Design. All Rights Reserved.</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+		
+		<!-- Series Browse -->
+		<div data-role="page" id="series">
+			<div data-role="header" data-position="fixed" data-theme="e">
+				<img src="images/01series.png"/>
+				<small>Series
+				</small>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li> all series books listed here </li>
+					<li> Duffer Design </li>
+					<li>&copy 2013 Duffer Design. All Rights Reserved.</li>
+				</ul>
+			</div> 
+			<div data-role="footer" data-position="fixed">
+        		<div data-role="navbar">
+        			<ul>
+        				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
+        				<li><a href="#info" data-role="button" data-icon="info" data-iconpos="right" data-theme="e">Info</a></li>
+        				<li><a href="#about" data-role="button" data-icon="star" data-iconpos="right" data-theme="e">About</a></li>
+        				<li><a href="#new" data-role="button" data-icon="check" data-iconpos="right" data-theme="e">New</a></li>
+        			</ul>
+        		</div>
+        	</div>
+		</div>
+		
 		<!-- The link for the jQuery Mobile web hosted code -->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
