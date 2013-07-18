@@ -24,7 +24,7 @@ var json = {
 	},
 	"book2": {
 		nameBook 	: ["Name: ", "Fahrenheit 451"],
-		nameAuthor 	: ["Author: ", "Ray Brandbury"],
+		nameAuthor 	: ["Author: ", "Ray Bradbury"],
 		isbnNumber 	: ["ISBN: ", "9789745171067"],
 		dateAdded 	: ["Added: ", "12-27-1988"],
 		datePublish : ["Published: ", "1953"],
