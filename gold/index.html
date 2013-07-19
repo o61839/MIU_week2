@@ -37,7 +37,7 @@
 	</head>
 	<body>
 	<!-- home page -->
-		<div data-role="page" id="home" data-id="navigation" >
+		<div data-role="page" id="home" data-id="navigation" data-theme="b">
 			
 			<div data-role="header" data-position="fixed" data-theme="e">
 				<small>
@@ -46,9 +46,7 @@
 				</small>
 			</div>
 			
-			<div>
-    			<a href="additem.html" data-ajax="false"><img src="images/cta.png" alt="cta"/></a>
-			</div>
+    		<a href="additem.html" data-ajax="false"><img src="images/cta.png" alt="cta"/></a>
         	
         	<div data-role="content">
         		<!--
@@ -60,13 +58,13 @@
 				<input type="search" name="search" id="search-basic" value="Search for a book!" />
         		
         		<label for="browse-basic">Browse Categories:</label>
-        		<ul>
-        			<li><a href="#hardcover" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01hardcover.png"/>   Hardcover</a></li>
-        			<li><a href="#paperback" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01paperback.png"/>   Paperback</a></li>
-        			<li><a href="#mobile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01mobile.png"/>   Mobile</a></li>
-        			<li><a href="#audio" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01audio.png"/>   Audio</a></li>
-        			<li><a href="#series" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01series.png"/>   Series</a></li>
-        		</ul>
+        		<p>
+        			<a href="#hardcover" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01hardcover.png"/>   Hardcover</a>
+        			<a href="#paperback" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01paperback.png"/>   Paperback</a>
+        			<a href="#mobile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01mobile.png"/>   Mobile</a>
+        			<a href="#audio" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01audio.png"/>   Audio</a>
+        			<a href="#series" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01series.png"/>   Series</a>
+        		</p>
         	</div>
         		
         	<div data-role="footer" data-position="fixed">
@@ -83,7 +81,7 @@
 		</div>
 		
 	<!-- info page -->
-		<div data-role="page" id="info">
+		<div data-role="page" id="info" data-theme="e">
 			<div data-role="header" data-position="fixed" data-theme="e">
 				<small>
 					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
@@ -114,7 +112,7 @@
 		</div>
 		
 	<!-- about page -->
-		<div data-role="page" id="about">
+		<div data-role="page" id="about" data-theme="e">
 			<div data-role="header" data-position="fixed" data-theme="e">
 				<small>
 					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
@@ -159,15 +157,15 @@
 		</div>
 	
 		<!-- Newstream page -->
-		<div data-role="page" id="new">
+		<div data-role="page" id="new" data-theme="e">
 			<div data-role="header" data-position="fixed" data-theme="e">
 				<small>
 					<img src="images/MyLogos.png" alt="Logo, DufferDesign" style="float:left;display:inline"/>
 					Organize your books with us! 
 				</small>
 			</div>
-   			<div data-role="content">
-   				<ul>
+   			<div data-role="content" data-theme="d">
+   				<ul data-role="listview" data-inset="true">
    					<h4> Newly added books: </h4>
 					<li>
 						<h3>Twilight Series</h3>
@@ -185,6 +183,9 @@
 						Type: fiction<br />
 						Comments: Great book.
 						</p>
+					</li>
+					<li data-role="list-divider"></li>
+					<li>
 						<h4>New Moon</h4>
 						<p>
 						Author: Stephanie Meyers<br />
@@ -199,6 +200,9 @@
 						Type: fiction<br />
 						Comments: Great book.
 						</p>
+					</li>
+					<li data-role="list-divider"></li>
+					<li>
 						<h4>Eclipse</h4>
 						<p>
 						Author: Stephanie Meyers<br />
@@ -213,6 +217,9 @@
 						Type: fiction<br />
 						Comments: Great book.
 						</p>
+					</li>
+					<li data-role="list-divider"></li>
+					<li>
 						<h4>Breaking Dawn</h4>
 						<p>
 						Author: Stephanie Meyers<br />
@@ -230,7 +237,7 @@
 					</li>
 				</ul>
    			</div> 
-   			 <div data-role="footer" data-position="fixed">
+   			<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
         				<li><a href="#home" data-role="button" data-icon="home" data-iconpos="right" data-theme="e">Home</a></li>
@@ -250,23 +257,24 @@
 				</small>
 			</div>
 			<div data-role="content">
-				<ul>
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li data-role="list-divider">Grapes of Wrath</li>
 					<li>
-						<h4>Grapes of Wrath</h4>
 						<p>
-						Author: John Steinbeck<br />
-						ISBN: 9781440637124<br />
-						Added: 11-01-1977<br />
-						Published: 1939<br />
-						Genre: novel<br />
-						Read: read<br />
-						Rate: 7<br />
-						Purchased: borrowed<br />
-						Cover: hardcover<br />
-						Type: fiction<br />
-						Comments: Better than I thought.
+							Author: John Steinbeck<br />
+							ISBN: 9781440637124<br />
+							Added: 11-01-1977<br />
+							Published: 1939<br />
+							Genre: novel<br />
+							Read: read<br />
+							Rate: 7<br />
+							Purchased: borrowed<br />
+							Cover: hardcover<br />
+							Type: fiction<br />
+							Comments: Better than I thought.
 						</p>
 					</li>
+					<br />
 				</ul>
 			</div> 
 			<div data-role="footer" data-position="fixed">
@@ -289,23 +297,24 @@
 				</small>
 			</div>
 			<div data-role="content">
-				<ul>
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li data-role="list-divider">Fahrenheit 451</li>
 					<li>
-						<h4>Fahrenheit 451</h4>
 						<p>
-						Author: Ray Bradbury<br />
-						ISBN: 9789745171067<br />
-						Added: 12-27-1988<br />
-						Published: 1953<br />
-						Genre: science fiction<br />
-						Read: read<br />
-						Rate: 10<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: AWESOME book.
+							Author: Ray Bradbury<br />
+							ISBN: 9789745171067<br />
+							Added: 12-27-1988<br />
+							Published: 1953<br />
+							Genre: science fiction<br />
+							Read: read<br />
+							Rate: 10<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: AWESOME book.
 						</p>
 					</li>
+					<br />
 				</ul>
 			</div> 
 			<div data-role="footer" data-position="fixed">
@@ -328,23 +337,24 @@
 				</small>
 			</div>
 			<div data-role="content">
-				<ul>
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li data-role="list-divider">To Kill a Mockingbird</li>
 					<li>
-						<h4>To Kill a Mockingbird</h4>
 						<p>
-						Author: Harper Lee<br />
-						ISBN: 9780397001514<br />
-						Added: 06-13-2010<br />
-						Published: 1988<br />
-						Genre: drama<br />
-						Read: unread<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: mobile<br />
-						Type: fiction<br />
-						Comments: Great book.
+							Author: Harper Lee<br />
+							ISBN: 9780397001514<br />
+							Added: 06-13-2010<br />
+							Published: 1988<br />
+							Genre: drama<br />
+							Read: unread<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: mobile<br />
+							Type: fiction<br />
+							Comments: Great book.
 						</p>
 					</li>
+					<br />
 				</ul>
 			</div> 
 			<div data-role="footer" data-position="fixed">
@@ -367,24 +377,25 @@
 				</small>
 			</div>
 			<div data-role="content">
-				<ul>
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li data-role="list-divider">No Audio Books Found</li>
 					<li>
-						<h4>No audio books found</h4>
 						<!-- <h4>Grapes of Wrath</h4>
 						<p>
-						Author: John Steinbeck<br />
-						ISBN: 9781440637124<br />
-						Added: 11-01-1977<br />
-						Published: 1939<br />
-						Genre: novel<br />
-						Read: read<br />
-						Rate: 7<br />
-						Purchased: borrowed<br />
-						Cover: hardcover<br />
-						Type: fiction<br />
-						Comments: Better than I thought.
+							Author: John Steinbeck<br />
+							ISBN: 9781440637124<br />
+							Added: 11-01-1977<br />
+							Published: 1939<br />
+							Genre: novel<br />
+							Read: read<br />
+							Rate: 7<br />
+							Purchased: borrowed<br />
+							Cover: hardcover<br />
+							Type: fiction<br />
+							Comments: Better than I thought.
 						</p> -->
 					</li>
+					<br />
 				</ul>
 			</div> 
 			<div data-role="footer" data-position="fixed">
@@ -407,66 +418,76 @@
 				</small>
 			</div>
 			<div data-role="content">
-				<ul>
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li data-role="list-divider">Twilight</li>
 					<li>
-						<h3>Twilight Series</h3>
-						<h4>Twilight</h4>
 						<p>
-						Author: Stephanie Meyers<br />
-						ISBN: 0316160172<br />
-						Added: 08-13-2012<br />
-						Published: 2005<br />
-						Genre: drama<br />
-						Read: read<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: Great book.
-						</p>
-						<h4>New Moon</h4>
-						<p>
-						Author: Stephanie Meyers<br />
-						ISBN: 0316160199<br />
-						Added: 08-13-2012<br />
-						Published: 2006<br />
-						Genre: drama<br />
-						Read: read<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: Great book.
-						</p>
-						<h4>Eclipse</h4>
-						<p>
-						Author: Stephanie Meyers<br />
-						ISBN: 0316160202<br />
-						Added: 08-13-2012<br />
-						Published: 2007<br />
-						Genre: drama<br />
-						Read: read<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: Great book.
-						</p>
-						<h4>Breaking Dawn</h4>
-						<p>
-						Author: Stephanie Meyers<br />
-						ISBN: 9780316067928<br />
-						Added: 08-13-2012<br />
-						Published: 2008<br />
-						Genre: drama<br />
-						Read: read<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: Great book.
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160172<br />
+							Added: 08-13-2012<br />
+							Published: 2005<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
 						</p>
 					</li>
+					<br />
+					<li data-role="list-divider">New Moon</li>
+					<li>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160199<br />
+							Added: 08-13-2012<br />
+							Published: 2006<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+					</li>
+					<br />
+					<li data-role="list-divider">Eclipse</li>
+					<li>
+						
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160202<br />
+							Added: 08-13-2012<br />
+							Published: 2007<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+					</li>
+					<br />
+					<li data-role="list-divider">Breaking Dawn</li>
+					<li>
+						<p>
+							Author: Stephanie Meyers<br />
+							ISBN: 9780316067928<br />
+							Added: 08-13-2012<br />
+							Published: 2008<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</p>
+					</li>
+					<br />
 				</ul>
 			</div> 
 			<div data-role="footer" data-position="fixed">

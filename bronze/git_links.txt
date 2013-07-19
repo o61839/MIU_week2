@@ -8,7 +8,7 @@ These are my Git Links:
 
 	https://github.com/o61839/MIU_week2.git
 
-	http://o61839.github.io/MIU_week2/
+	http://o61839.github.io/MIU_week2/gold/index.html 	http://o61839.github.io/MIU_week2/bronze/index.html 
 
 Future Weeks: 
 
