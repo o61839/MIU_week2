@@ -48,23 +48,25 @@
 			
     		<a href="additem.html" data-ajax="false"><img src="images/cta.png" alt="cta"/></a>
         	
-        	<div data-role="content">
+        	<div data-role="content" class="ui-grid-a">
         		<!--
         		put class="ui-hide-label" in the <div> and it will hide the label
         		<p id="searchFunction"><input type="text" id="bookSearch" placeholder="Search for a Book!"/></p>
         		<p><a href="error401.html" data-role="button" data-icon="search" data-iconpos="right" data-theme="d">Search</a></p>
         		-->
+        		<!--
         		<label for="search-basic">Search:</label>
 				<input type="search" name="search" id="search-basic" value="Search for a book!" />
-        		
         		<label for="browse-basic">Browse Categories:</label>
-        		<p>
-        			<a href="#hardcover" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01hardcover.png"/>   Hardcover</a>
-        			<a href="#paperback" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01paperback.png"/>   Paperback</a>
-        			<a href="#mobile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01mobile.png"/>   Mobile</a>
-        			<a href="#audio" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01audio.png"/>   Audio</a>
-        			<a href="#series" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01series.png"/>   Series</a>
-        		</p>
+        		-->
+        		<ul>
+					<div class="ui-block-a"><a href="#hardcover" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01hardcover.png" width="40" height="40"/></a></div>
+					<div class="ui-block-b"><a href="#paperback" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01paperback.png" width="40" height="40"/></a></div>
+					<div class="ui-block-a"><a href="#mobile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01mobile.png" width="40" height="40"/></a></div>
+					<div class="ui-block-b"><a href="#audio" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01audio.png" width="40" height="40"/></a></div>
+					<div class="ui-block-a"><a href="#series" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="d"><img src="images/01series.png" width="40" height="40"/></a></div>
+					<div class="ui-block-b"></div>
+				</ul>
         	</div>
         		
         	<div data-role="footer" data-position="fixed">
@@ -165,78 +167,81 @@
 				</small>
 			</div>
    			<div data-role="content" data-theme="d">
-   				<ul data-role="listview" data-inset="true">
-   					<h4> Newly added books: </h4>
-					<li>
-						<h3>Twilight Series</h3>
-						<h4>Twilight</h4>
-						<p>
-						Author: Stephanie Meyers<br />
-						ISBN: 0316160172<br />
-						Added: 08-13-2012<br />
-						Published: 2005<br />
-						Genre: drama<br />
-						Read: read<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: Great book.
-						</p>
-					</li>
-					<li data-role="list-divider"></li>
-					<li>
-						<h4>New Moon</h4>
-						<p>
-						Author: Stephanie Meyers<br />
-						ISBN: 0316160199<br />
-						Added: 08-13-2012<br />
-						Published: 2006<br />
-						Genre: drama<br />
-						Read: read<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: Great book.
-						</p>
-					</li>
-					<li data-role="list-divider"></li>
-					<li>
-						<h4>Eclipse</h4>
-						<p>
-						Author: Stephanie Meyers<br />
-						ISBN: 0316160202<br />
-						Added: 08-13-2012<br />
-						Published: 2007<br />
-						Genre: drama<br />
-						Read: read<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: Great book.
-						</p>
-					</li>
-					<li data-role="list-divider"></li>
-					<li>
-						<h4>Breaking Dawn</h4>
-						<p>
-						Author: Stephanie Meyers<br />
-						ISBN: 9780316067928<br />
-						Added: 08-13-2012<br />
-						Published: 2008<br />
-						Genre: drama<br />
-						Read: read<br />
-						Rate: 6<br />
-						Purchased: purchased<br />
-						Cover: paperback<br />
-						Type: fiction<br />
-						Comments: Great book.
-						</p>
-					</li>
-				</ul>
+   				<h4> Newly added books: </h4>
+   				<div data-role="collapsible-set">
+   					<h3>Twilight Series</h3>
+   					<div data-role="collapsible" data-collapsed="true" data-theme="b">
+   						<h4>Twilight</h4>
+						<small>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160172<br />
+							Added: 08-13-2012<br />
+							Published: 2005<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</small>
+   					</div>
+   					
+   					<div data-role="collapsible" data-collapsed="true" data-theme="b">
+   						<h4>New Moon</h4>
+						<small>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160199<br />
+							Added: 08-13-2012<br />
+							Published: 2006<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</small>
+   					</div>
+   					
+   					<div data-role="collapsible" data-collapsed="true" data-theme="b">
+   						<h4>Eclipse</h4>
+						<small>
+							Author: Stephanie Meyers<br />
+							ISBN: 0316160202<br />
+							Added: 08-13-2012<br />
+							Published: 2007<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</small>
+   					</div>
+   					
+   					<div data-role="collapsible" data-collapsed="true" data-theme="b">
+   						<h4>Breaking Dawn</h4>
+						<small>
+							Author: Stephanie Meyers<br />
+							ISBN: 9780316067928<br />
+							Added: 08-13-2012<br />
+							Published: 2008<br />
+							Genre: drama<br />
+							Read: read<br />
+							Rate: 6<br />
+							Purchased: purchased<br />
+							Cover: paperback<br />
+							Type: fiction<br />
+							Comments: Great book.
+						</small>
+   					</div>	
+   					
+   				</div>
+			
    			</div> 
+   			
    			<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
@@ -418,10 +423,13 @@
 				</small>
 			</div>
 			<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-filter="true">
-					<li data-role="list-divider">Twilight</li>
-					<li>
-						<p>
+				<div data-role="content" data-theme="d">
+					<h4> Books in a Series: </h4>
+					<div data-role="collapsible-set">
+   					<h3>Twilight Series</h3>
+   					<div data-role="collapsible" data-collapsed="true" data-theme="b">
+   						<h4>Twilight</h4>
+						<small>
 							Author: Stephanie Meyers<br />
 							ISBN: 0316160172<br />
 							Added: 08-13-2012<br />
@@ -433,12 +441,12 @@
 							Cover: paperback<br />
 							Type: fiction<br />
 							Comments: Great book.
-						</p>
-					</li>
-					<br />
-					<li data-role="list-divider">New Moon</li>
-					<li>
-						<p>
+						</small>
+   					</div>
+   					
+   					<div data-role="collapsible" data-collapsed="true" data-theme="b">
+   						<h4>New Moon</h4>
+						<small>
 							Author: Stephanie Meyers<br />
 							ISBN: 0316160199<br />
 							Added: 08-13-2012<br />
@@ -450,13 +458,12 @@
 							Cover: paperback<br />
 							Type: fiction<br />
 							Comments: Great book.
-						</p>
-					</li>
-					<br />
-					<li data-role="list-divider">Eclipse</li>
-					<li>
-						
-						<p>
+						</small>
+   					</div>
+   					
+   					<div data-role="collapsible" data-collapsed="true" data-theme="b">
+   						<h4>Eclipse</h4>
+						<small>
 							Author: Stephanie Meyers<br />
 							ISBN: 0316160202<br />
 							Added: 08-13-2012<br />
@@ -468,12 +475,12 @@
 							Cover: paperback<br />
 							Type: fiction<br />
 							Comments: Great book.
-						</p>
-					</li>
-					<br />
-					<li data-role="list-divider">Breaking Dawn</li>
-					<li>
-						<p>
+						</small>
+   					</div>
+   					
+   					<div data-role="collapsible" data-collapsed="true" data-theme="b">
+   						<h4>Breaking Dawn</h4>
+						<small>
 							Author: Stephanie Meyers<br />
 							ISBN: 9780316067928<br />
 							Added: 08-13-2012<br />
@@ -485,11 +492,11 @@
 							Cover: paperback<br />
 							Type: fiction<br />
 							Comments: Great book.
-						</p>
-					</li>
-					<br />
-				</ul>
-			</div> 
+						</small>
+   					</div>	
+   				</div>
+   			</div> 
+		</div> 
 			<div data-role="footer" data-position="fixed">
         		<div data-role="navbar">
         			<ul>
